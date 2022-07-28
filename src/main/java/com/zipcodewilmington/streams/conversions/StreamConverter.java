@@ -1,5 +1,6 @@
 package com.zipcodewilmington.streams.conversions;
 
+
 import com.zipcodewilmington.streams.anthropoid.Person;
 import com.zipcodewilmington.streams.anthropoid.PersonFactory;
 
@@ -25,16 +26,16 @@ public final class StreamConverter extends PersonConversionAgent<Stream<Person>>
 
     // TODO
     public List<Person> toList() {
-        return null;
+        return this.personList;
     }
 
     // TODO
     public Stream<Person> toStream() {
-        return null;
+        return this.personList.stream();
     }
 
     // TODO
     public Person[] toArray() {
-        return null;
+        return personList.toArray(new Person[0]);
     }
 }
